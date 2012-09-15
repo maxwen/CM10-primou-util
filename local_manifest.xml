@@ -4,6 +4,9 @@
     <remote name="Lloir"
         fetch="https://github.com/Ll0ir/"/>
 
+    <remote name="maxwen"
+        fetch="https://github.com/maxwen/"/>
+
     <!--<remove-project name="CyanogenMod/android_prebuilt" path="prebuilt"/>-->
     <project path="prebuilt"
         revision="jb"
@@ -16,6 +19,7 @@
     <remove-project name="CyanogenMod/android_external_chromium" path="external/chromium"/>
     <project path="external/chromium" 
         remote="Lloir"
+        revision="master"
         name="android_external_chromium" />
 
     <remove-project name="CyanogenMod/android_frameworks_base" path="frameworks/base"/>
@@ -27,6 +31,7 @@
     <remove-project name="CyanogenMod/android_packages_apps_Browser" path="packages/apps/Browser"/>
     <project path="packages/apps/Browser" 
         remote="Lloir"
+        revision="master"
         name="android_packages_apps_Browser" />
 
     <remove-project name="CyanogenMod/android_packages_apps_Camera" path="packages/apps/Camera"/>
@@ -66,5 +71,12 @@
         name="android_vendor_qcom_proprietary" 
         remote="Lloir" 
         revision="jellybean" />
+
+    <remove-project name="CyanogenMod/android_hardware_qcom_audio" path="hardware/qcom/audio"/>
+    <project path="hardware/qcom/audio"
+        remote="maxwen"
+        revision="jellybean"
+        name="android_hardware_qcom_audio"/>
+
 
   </manifest>
