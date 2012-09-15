@@ -2,7 +2,7 @@
   <manifest>
 
     <remote name="Lloir"
-        fetch="https://github.com/Lloir/"/>
+        fetch="https://github.com/Ll0ir/"/>
 
     <!--<remove-project name="CyanogenMod/android_prebuilt" path="prebuilt"/>-->
     <project path="prebuilt"
@@ -27,7 +27,6 @@
     <remove-project name="CyanogenMod/android_packages_apps_Browser" path="packages/apps/Browser"/>
     <project path="packages/apps/Browser" 
         remote="Lloir"
-        revision="jellybean"        
         name="android_packages_apps_Browser" />
 
     <remove-project name="CyanogenMod/android_packages_apps_Camera" path="packages/apps/Camera"/>
@@ -48,7 +47,7 @@
         revision="jb-testing-primou"
         name="android_packages_apps_Settings" />
 
-    <project name="android_device_primou" 
+    <project name="android_device_htc_primou" 
         path="device/htc/primou" 
         remote="Lloir" 
         revision="jb-testing"/>
