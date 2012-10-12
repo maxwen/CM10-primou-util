@@ -7,49 +7,16 @@
     <remote name="maxwen"
         fetch="https://github.com/maxwen/"/>
 
-    <!--<remove-project name="CyanogenMod/android_prebuilt" path="prebuilt"/>-->
-    <project path="prebuilt"
-        revision="jb"
-        name="AOKP/prebuilt"/>
-
-    <project path="packages/apps/FileExplorer" 
-        name="AOKP-SGS2/android_packages_apps_FileExplorer" 
-        revision="ics" />
-
-    <remove-project name="CyanogenMod/android_external_chromium" path="external/chromium"/>
-    <project path="external/chromium" 
-        remote="Lloir"
-        revision="master"
-        name="android_external_chromium" />
-
     <remove-project name="CyanogenMod/android_frameworks_base" path="frameworks/base"/>
     <project path="frameworks/base" 
         remote="Lloir"
         revision="jb-primou"
-        name="android_frameworks_base" />
-
-    <remove-project name="CyanogenMod/android_packages_apps_Browser" path="packages/apps/Browser"/>
-    <project path="packages/apps/Browser" 
-        remote="Lloir"
-        revision="master"
-        name="android_packages_apps_Browser" />
-
-    <remove-project name="CyanogenMod/android_packages_apps_Camera" path="packages/apps/Camera"/>
-    <project path="packages/apps/Camera" 
-        remote="Lloir"
-        revision="jb-testing-primou"
-        name="android_packages_apps_Camera" />
-
-    <remove-project name="CyanogenMod/android_packages_apps_Mms" path="packages/apps/Mms"/>
-    <project path="packages/apps/Mms" 
-        remote="Lloir"        
-        revision="jellybean"
-        name="android_packages_apps_Mms" />
+        name="base" />
 
     <remove-project name="CyanogenMod/android_packages_apps_Settings" path="packages/apps/Settings"/>
     <project path="packages/apps/Settings" 
         remote="Lloir"
-        revision="jb-testing-primou"
+        revision="jellybean"
         name="android_packages_apps_Settings" />
 
     <project name="android_device_htc_primou" 
@@ -57,10 +24,10 @@
         remote="Lloir" 
         revision="jb-testing"/>
 
-    <project name="platform_device_htc_msm7x30-common" 
+    <project name="msm7x30-common" 
         path="device/htc/msm7x30-common" 
         remote="Lloir"
-        revision="jb-devel-primou"/>
+        revision="jb"/>
 
     <project name="android_vendor_htc_primou" 
         path="vendor/htc/primou" 
