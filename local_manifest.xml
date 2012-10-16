@@ -7,19 +7,29 @@
     <remote name="maxwen"
         fetch="https://github.com/maxwen/"/>
 
+    <project path="packages/apps/FileExplorer" 
+        name="AOKP-SGS2/android_packages_apps_FileExplorer" 
+        revision="ics" />
+
     <remove-project name="CyanogenMod/android_frameworks_base" path="frameworks/base"/>
-    <project path="frameworks/base" 
-        remote="Lloir"
-        revision="jb-primou"
-        name="base" />
+    <project path="frameworks/base"
+       remote="maxwen"
+       revision="jellybean"
+       name="android_frameworks_base"/>
 
     <remove-project name="CyanogenMod/android_packages_apps_Settings" path="packages/apps/Settings"/>
     <project path="packages/apps/Settings" 
-        remote="Lloir"
+        remote="maxwen"
         revision="jellybean"
         name="android_packages_apps_Settings" />
 
-    <project name="android_device_htc_primou" 
+    <remove-project name="CyanogenMod/android_packages_apps_Phone" path="packages/apps/Phone"/>
+    <project path="packages/apps/Phone" 
+        remote="maxwen"
+        revision="jellybean"
+        name="android_packages_apps_Phone" />
+
+    <project name="primou" 
         path="device/htc/primou" 
         remote="Lloir" 
         revision="jb-testing"/>
