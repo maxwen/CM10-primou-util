@@ -7,27 +7,17 @@
     <remote name="maxwen"
         fetch="https://github.com/maxwen/"/>
 
-    <project path="packages/apps/FileExplorer" 
-        name="AOKP-SGS2/android_packages_apps_FileExplorer" 
-        revision="ics" />
-
-    <remove-project name="CyanogenMod/android_frameworks_base" path="frameworks/base"/>
-    <project path="frameworks/base"
-       remote="maxwen"
-       revision="jellybean"
-       name="android_frameworks_base"/>
-
-    <remove-project name="CyanogenMod/android_packages_apps_Settings" path="packages/apps/Settings"/>
-    <project path="packages/apps/Settings" 
-        remote="maxwen"
+    <remove-project name="CyanogenMod/android_hardware_qcom_display" path="hardware/qcom/display"/>
+    <project path="hardware/qcom/display" 
+        remote="Lloir"
         revision="jellybean"
-        name="android_packages_apps_Settings" />
+        name="hardware_qcom_display" />
 
-    <remove-project name="CyanogenMod/android_packages_apps_Phone" path="packages/apps/Phone"/>
-    <project path="packages/apps/Phone" 
-        remote="maxwen"
+    <remove-project name="CyanogenMod/android_frameworks_native" path="frameworks/native"/>
+    <project path="frameworks/native" 
+        remote="Lloir"
         revision="jellybean"
-        name="android_packages_apps_Phone" />
+        name="native" />
 
     <project name="primou" 
         path="device/htc/primou" 
@@ -48,12 +38,5 @@
         name="android_vendor_qcom_proprietary" 
         remote="Lloir" 
         revision="jellybean" />
-
-    <remove-project name="CyanogenMod/android_hardware_qcom_audio" path="hardware/qcom/audio"/>
-    <project path="hardware/qcom/audio"
-        remote="maxwen"
-        revision="jellybean"
-        name="android_hardware_qcom_audio"/>
-
 
   </manifest>
