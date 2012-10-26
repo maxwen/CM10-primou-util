@@ -51,7 +51,7 @@
 
     <remove-project name="CyanogenMod/android_hardware_qcom_audio" path="hardware/qcom/audio"/>
     <project path="hardware/qcom/audio"
-        remote="maxwen"
+        remote="Lloir"
         revision="jellybean"
         name="android_hardware_qcom_audio"/>
 
