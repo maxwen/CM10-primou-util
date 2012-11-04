@@ -1,49 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
   <manifest>
 
-    <remote name="Lloir"
-        fetch="https://github.com/Ll0ir/"/>
-
     <remote name="maxwen"
         fetch="https://github.com/maxwen/"/>
 
     <remove-project name="CyanogenMod/android_hardware_qcom_display" path="hardware/qcom/display"/>
     <project path="hardware/qcom/display" 
-        remote="Lloir"
-        revision="jellybean"
+        remote="maxwen"
+        revision="refs/heads/jellybean"
         name="hardware_qcom_display" />
 
     <remove-project name="CyanogenMod/android_hardware_qcom_audio" path="hardware/qcom/audio"/>
     <project path="hardware/qcom/audio"
         remote="maxwen"
-        revision="jellybean"
+        revision="refs/heads/jellybean"
         name="android_hardware_qcom_audio"/>
-
-    <remove-project name="CyanogenMod/android_frameworks_native" path="frameworks/native"/>
-    <project path="frameworks/native" 
-        remote="Lloir"
-        revision="jellybean"
-        name="native" />
 
     <project name="primou" 
         path="device/htc/primou" 
-        remote="Lloir" 
-        revision="jb-testing"/>
+        remote="maxwen" 
+        revision="refs/heads/jellybean"/>
 
     <project name="msm7x30-common" 
         path="device/htc/msm7x30-common" 
-        remote="Lloir"
-        revision="jb"/>
+        remote="maxwen"
+        revision="refs/heads/jellybean"/>
 
     <project name="android_vendor_htc_primou" 
         path="vendor/htc/primou" 
-        remote="Lloir" 
-        revision="JB-TESTING"/>
-
-    <project path="vendor/qcom/proprietary" 
-        name="android_vendor_qcom_proprietary" 
-        remote="Lloir" 
-        revision="jellybean" />
+        remote="maxwen" 
+        revision="refs/heads/jellybean"/>
 
     <project path="packages/apps/FileExplorer" 
         name="AOKP-SGS2/android_packages_apps_FileExplorer" 
