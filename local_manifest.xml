@@ -4,6 +4,12 @@
     <remote name="maxwen"
         fetch="https://github.com/maxwen/"/>
 
+    <remove-project path="frameworks/native" name="CyanogenMod/android_frameworks_native" />
+    <project path="frameworks/native" 
+        remote="maxwen"
+        revision="refs/heads/jellybean"
+        name="native" />
+
     <remove-project name="CyanogenMod/android_hardware_qcom_display" path="hardware/qcom/display"/>
     <project path="hardware/qcom/display" 
         remote="maxwen"
@@ -31,8 +37,8 @@
         remote="maxwen" 
         revision="refs/heads/jellybean"/>
 
-    <project path="packages/apps/FileExplorer" 
+    <!--<project path="packages/apps/FileExplorer" 
         name="AOKP-SGS2/android_packages_apps_FileExplorer" 
-        revision="ics" />
+        revision="ics" />-->
 
   </manifest>
