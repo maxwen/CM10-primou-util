@@ -10,6 +10,18 @@
         revision="refs/heads/jellybean"
         name="native" />
 
+    <remove-project name="CyanogenMod/android_frameworks_base" path="frameworks/base"/>
+    <project path="frameworks/base"
+       remote="maxwen"
+       revision="refs/heads/jellybean"
+       name="android_frameworks_base"/>
+
+    <remove-project name="CyanogenMod/android_frameworks_av" path="frameworks/av"/>
+    <project path="frameworks/av"
+       remote="maxwen"
+       revision="refs/heads/jellybean"
+       name="android_frameworks_av"/>
+
     <remove-project name="CyanogenMod/android_hardware_qcom_display" path="hardware/qcom/display"/>
     <project path="hardware/qcom/display" 
         remote="maxwen"
@@ -21,6 +33,30 @@
         remote="maxwen"
         revision="refs/heads/jellybean"
         name="android_hardware_qcom_audio"/>
+
+    <remove-project name="CyanogenMod/android_hardware_qcom_media" path="hardware/qcom/media"/>
+    <project path="hardware/qcom/media"
+        remote="maxwen"
+        revision="refs/heads/jellybean"
+        name="android_hardware_qcom_media"/>
+
+    <remove-project name="CyanogenMod/android_packages_apps_Settings" path="packages/apps/Settings"/>
+    <project path="packages/apps/Settings" 
+        remote="maxwen"
+        revision="refs/heads/jellybean"
+        name="android_packages_apps_Settings" />
+
+    <remove-project name="CyanogenMod/android_packages_apps_Camera" path="packages/apps/Camera"/>
+    <project path="packages/apps/Camera"
+       remote="maxwen"
+       revision="refs/heads/jellybean"
+       name="android_packages_apps_Camera"/>
+
+    <remove-project name="CyanogenMod/android_packages_apps_LegacyCamera" path="packages/apps/LegacyCamera"/>
+    <project path="packages/apps/LegacyCamera"
+       remote="maxwen"
+       revision="refs/heads/jellybean"
+       name="android_packages_apps_LegacyCamera"/>
 
     <project name="primou" 
         path="device/htc/primou" 
@@ -37,8 +73,9 @@
         remote="maxwen" 
         revision="refs/heads/jellybean"/>
 
-    <!--<project path="packages/apps/FileExplorer" 
-        name="AOKP-SGS2/android_packages_apps_FileExplorer" 
-        revision="ics" />-->
+    <project name="HwaSettings" 
+        path="packages/apps/HwaSettings" 
+        remote="maxwen"
+        revision="refs/heads/jellybean"/>
 
   </manifest>
